@@ -11,7 +11,7 @@ def draw_callback(event, x, y, flags, param):
     global draw
     if event == cv.EVENT_MOUSEMOVE:
         if draw:
-            cv.circle(img, (x, y), 10, 200, -1)
+            cv.circle(img, (x, y), 20, 200, -1)
     elif event == cv.EVENT_LBUTTONDOWN:
         draw = True
     elif event == cv.EVENT_LBUTTONUP:
